@@ -1,3 +1,13 @@
+
+<?php
+session_start();
+if(!isset($_SESSION['USERID'])){
+    $_SESSION['USERID']='N';
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,10 +20,13 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         
         
-        <title>Profile</title>
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <title>header_nav</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/header_nav.css">
         
         <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+        
+        
+        <link rel="shortcut icon" href="img/logo.png">
         
         
     
@@ -22,58 +35,114 @@
 
 <body>
     
-    <div class="container-fluid top_nav_bar profile_top" style="margin-bottom: 50px;">
-        <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light" style="background-image: -webkit-gradient(linear,left top, left bottom,from(#e4e4e4),to(#2f5864));
-    
-        background-image: linear-gradient(rgba(228, 228, 228, 0.08),rgba(47, 88, 100, 0.1));!important; font-size: 81%; height: 52px; padding: 20px 0 20px 20px">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Logo</a>
+    <nav class="navbar navbar-expand-lg  my-nav fixed-top navbar-dark head_nav">
+     
+        
+	  <a class="navbar-brand" style="margin-top:-1px;" href="index.php"><img src="img/logo.png" alt="Smiley face" height="60" width="60"></a>
+	  
+        
+       
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+	  <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  
+		  <li class="nav-item order_now">
+			<a class="nav-link" href="food.php">Food Menu
+			</a>
+		  </li>
+            
+            <li class="nav-item">
+			<a class="nav-link" href="special.php"  onclick="make(event)">Special Menu
+			</a>
+		  </li>
+            
+            
+		  <li class="nav-item">
+			<a class="nav-link" href="cart.php">View Cart
+			</a>
+		  </li>
+		  
+		  <li class="nav-item">
+			<a class="nav-link" href="Contact-Us.php"  onclick="make(event)">Contact Us</a>
+		  </li>
+            <li class="nav-item">
+			<a class="nav-link " href="about_us.php">About us</a>
+         </li>
+         <li class="nav-item">
+			<a class="nav-link " href="profile.php"  onclick="make(event)">Profile</a>
+         </li>
+            
+		   
+             
+            
+		  <li class="nav-item">
+              <?php
+              if($_SESSION['USERID']!='N'){ 
+              ?> 
+             <a class="nav-link " href="logout.php">Logout</a>
+              
+              <?php
+              }else
+              {
+              ?> 
+                     
+                    <a class="nav-link " href="login.php">Login</a>
+               <?php
+              }
+              
+              ?> 
+              
+                  
 
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">ABOUT US</a>
-    </li>
+              
+              
+           
 
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        OUR MENU
-        </a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Breakfast</a>
-            <a class="dropdown-item" href="#">Lunch</a>
-            <a class="dropdown-item" href="#">Dinner</a>
-        </div>
-    </li>
-      
-      
-      <li class="nav-item order_now">
-        <a class="nav-link" href="#">ORDER NOW</a>
-      </li>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Right</a></li>
-    </ul>
-      
-      <li class="navbar-text login_text">
-        <p>logged in</p>
-      </li>
-      
-      
-          
-      
-      
-      
-      
-  </ul>
-</nav>
+              
+              
+			
+		  </li>
+		</ul>
+	  </div>
+	</nav>
     
-    </div>
     
+    
+
+<script type="text/javascript">
+    
+function make(e){
+  
+    
+ <?php   
+ if($_SESSION['USERID']=='N'){
+   ?>    
+     
+  alert("Please login first!");
+ 
+   
+    e.preventDefault();
+     <?php  
+ }
+  
+ ?>    
+
+    // return true or false, depending on whether you want to allow 
+    // the`href` property to follow through or not
+ }
+</script>
+    
+    
+
     
     
     
@@ -88,3 +157,7 @@
 </body>
 
 </html>
+
+
+
+

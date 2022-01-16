@@ -21,58 +21,30 @@
     
 
 <body>
-    <div class="container-fluid top_nav_bar" style="margin-bottom: 50px;">
-        <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light" style="background-image: -webkit-gradient(linear,left top, left bottom,from(#e4e4e4),to(#2f5864));
-    
-        background-image: linear-gradient(rgba(228, 228, 228, 0.08),rgba(47, 88, 100, 0.1));!important; font-size: 81%; height: 52px; padding: 20px 0 20px 20px">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Logo</a>
-
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">ABOUT US</a>
-    </li>
-
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        OUR MENU
-        </a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Breakfast</a>
-            <a class="dropdown-item" href="#">Lunch</a>
-            <a class="dropdown-item" href="#">Dinner</a>
-        </div>
-    </li>
-      
-      
-      <li class="nav-item order_now">
-        <a class="nav-link" href="#">ORDER NOW</a>
-      </li>
-  </ul>
-</nav>
-    
-    </div>
-    
-    
+    <?php include 'head_nav.php'?> 
+   
     
     
     <div class="container-fluid section_1">
+        
+        
+        
+        
         <div class="row">
+            <div class="welcome_txt text-center">
+                <p>WELCOME TO</p>
+            </div>
             
-            <p class="text-center welcome_txt">WELCOME TO</p>
             
         </div>
         
-        <div class="row">
-            <p class="text-center name_txt">OCEAN BLUE RESTAURANT</p>
+        <div class="row justify-content-center" >
+            <p class="name_txt">OCEAN BLUE RESTAURANT</p>
             <br>
-            <p class="intro">"good foods, good tests"</p>
+            <p style="text-align:center;" class="intro">"good foods, good tests"</p>
         </div>
+        
+        <!-- 
         <div class="row justify-content-center">
             
             <div style="width: 45%;">
@@ -84,7 +56,16 @@
             </div>
           
         </div>
+
+ -->
+        
+        
+        
+        
+        
     </div>
+    
+   
     
     <div class="container-fluid section_2">
         <div class="row justify-content-center">
@@ -92,7 +73,7 @@
         </div>
         <div class="row justify-content-center features_head_txt">
             
-            <p>Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
+            <p>Hello, we're Ocean Blue Restaurant, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
         
         </div>
         
@@ -346,8 +327,8 @@
                 <p>Get your food.</p>
                 </div>
             </div>
-            <div class="col-md-6 phn_pic">
-                <img src="resources/img/mobile.jpg">
+            <div class="col-md-6" style="padding-left: 300px !important;">
+                <img src="resources/img/mobile.png" height="500px" width="auto">
 
             </div>
 

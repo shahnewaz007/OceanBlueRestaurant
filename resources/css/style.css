@@ -38,27 +38,76 @@ html,body{
 }
 
 
+
+
+
+
+
+
+
 .welcome_txt {
     color: #fff;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+   
     width: 100%;
     font-size: 200%;
     font-weight: bold;
-    margin-top: 150px;
+    padding-top: 150px;
     font-family:serif;
-      background: -webkit-gradient(linear,left top, left bottom,from(#fff),to(#fff) );
-      background: linear-gradient(#fff,#fff );
-  -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
     
-      
+    
+    position: relative;
+    
+    
+    -webkit-animation-name: t_1;
+    animation-name: text_1;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 
+    
 }
+    
+
+
+
+
+@-webkit-keyframes t_1{
+     0%   {left:-1000px; top:0px;}
+    
+    25%  {left:100px; top:0px;}
+    
+    50%  {left:0px; top:0px;}
+    
+    75%  {left:0px; top:0px;}
+    
+    100% {left:0px; top:0px;}
+}
+
+
+
+@keyframes t_1{
+    0%   {left:-1000px; top:0px;}
+    
+    25%  {left:100px; top:0px;}
+    
+    50%  {left:0px; top:0px;}
+    
+    75%  {left:0px; top:0px;}
+    
+    100% {left:0px; top:0px;}
+    
+    
+}
+
+
+
+
+
+
+
 
 
 .name_txt{
@@ -77,24 +126,61 @@ html,body{
       background: linear-gradient(rgb(142, 146, 255),#fff );
   -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
-    
 }
+
+
 
 .intro{ 
     color: #fff;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+
     width: 100%;
     font-size: 100%;
     
     font-style: italic;
     font-family: cursive;
-
+    margin: 0 auto;
+    
+    position: relative;
+    
+    
+    -webkit-animation-name: text_3;
+    animation-name: text_3;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
+
+@-webkit-keyframes text_3{
+     0%   {left:-1000px; top:0px;}
+    
+    25%  {left:100px; top:0px;}
+    
+    50%  {left:0px; top:0px;}
+    
+    75%  {left:0px; top:0px;}
+    
+    100% {left:0px; top:0px;}
+}
+
+
+
+@keyframes text_3{
+    0%   {left:-1000px; top:0px;}
+    
+    25%  {left:100px; top:0px;}
+    
+    50%  {left:0px; top:0px;}
+    
+    75%  {left:0px; top:0px;}
+    
+    100% {left:0px; top:0px;}
+    
+    
+}
+
 
 
 
@@ -537,14 +623,8 @@ cite img{
 
 .phn_pic{
     
-    padding-left: 100px !important;
+    
 }
-
-.phn_pic img{
-    width: 90%;
-    height: auto;
-}
-
 
 /*-------------------*/
 /*FOOTER*/
@@ -650,6 +730,10 @@ footer{
     float: right !important;
 }
 
+.top_nav_bar{
+     opacity: .7;
+}
+
 .order_now{
      
     color: #fff !important;
@@ -669,7 +753,14 @@ footer{
 
 
 
-
+.head_nav{
+    color: #fff !important;
+    background-image: linear-gradient(rgba(228, 228, 228, 0.08),rgba(47, 88, 100, 0.1));!important;
+    font-size: 85%; 
+    height: 52px; 
+    padding: 20px 0 20px 20px;
+    background-color: rgba(34, 34, 34, 0.48);
+}
 
 
 

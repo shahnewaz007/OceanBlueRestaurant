@@ -11,13 +11,15 @@
         
         
         <title>Ocean Blue</title>
-        <link rel="stylesheet" type="text/css" href="resources/css/about_us.css">
+        
         
         <link rel="stylesheet" type="text/css" href="resources/css/header_nav.css">
+   
         
         <link rel="stylesheet" type="text/css" href="resources/css/footer.css">
         
         <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+             <link rel="stylesheet" type="text/css" href="resources/css/about_us.css">
         
         
     
@@ -26,43 +28,7 @@
 
 <body>
     
-    <div class="container-fluid top_nav_bar profile_top" style="margin-bottom: 50px;">
-        <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light" style="background-image: -webkit-gradient(linear,left top, left bottom,from(#e4e4e4),to(#2f5864));
-    
-        background-image: linear-gradient(rgba(228, 228, 228, 0.08),rgba(47, 88, 100, 0.1));!important; font-size: 81%; height: 52px; padding: 20px 0 20px 20px">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Logo</a>
-
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">ABOUT US</a>
-    </li>
-
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        OUR MENU
-        </a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Breakfast</a>
-            <a class="dropdown-item" href="#">Lunch</a>
-            <a class="dropdown-item" href="#">Dinner</a>
-        </div>
-    </li>
-      
-      
-      <li class="nav-item order_now">
-        <a class="nav-link" href="#">ORDER NOW</a>
-      </li>
-     
-  </ul>
-</nav>
-    
-    </div>
+    <?php include 'head_nav.php'?> 
     
     
     
@@ -81,60 +47,63 @@
             
         </div>
         
+         <div class="container-fluid section_2">
+        <div class="row justify-content-center">
+            <h2>TAKE HEALTHY &mdash; STAY HEALTHY</h2>
+        </div>
+        <div class="row justify-content-center features_head_txt">
+            
+            <p>Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
+        
+        </div>
+        
+        <div class="row justify-content-center" style="padding: 0 80px;">
+            <div class="col-md-3">
+                <div class="row  justify-content-center">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                </div>
+                
+                
+                <h3 style="font-size: 105%; margin-bottom:20px; text-align: center;">Up to 365 days/year</h3>
+                <p class="features_txt">Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row  justify-content-center">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                </div>
+                
+                
+                <h3 style="font-size: 105%; margin-bottom:20px; text-align: center;">Ready in 20 minutes</h3>
+                <p  class="features_txt">You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="row  justify-content-center">
+                   <i class="ion-ios-nutrition-outline icon-big"></i>
+                </div>
+                
+                
+                <h3 style="font-size: 105%; margin-bottom:20px; text-align: center;">100% organic</h3>
+                <p class="features_txt">All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+            </div>
+            <div class="col-md-3">
+                
+                <div class="row  justify-content-center">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                </div>
+                
+                <h3 style="font-size: 105%; margin-bottom:20px; text-align: center;">Order anything</h3>
+                <p class="features_txt">We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+            </div>
+        </div>
+    
+    </div>
+        
+        
     
     </div>
     
     
-    <footer>
-        <div class="row">
-            <div class="col-md-6">
-                
-                <ul class="footer_nav">
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Press</a>
-                    </li>
-                    <li>
-                        <a href="#">IOS app</a>
-                    </li>
-                    <li>
-                        <a href="#">Android app</a>
-                    </li>
-                
-                </ul>
-                
-            </div>
-            
-            <div class="col-md-6">
-                <ul class="social_links">
-                    <li>
-                        <a class="logo_facebook" href="#"><ion-icon name="logo-facebook"></ion-icon> </a>    
-                    </li>
-                    <li>
-                        <a class="logo_twitter" href="#"><ion-icon name="logo-twitter"></ion-icon> </a>    
-                    </li>
-                    <li>
-                        <a class="logo_googleplus" href="#"><ion-icon name="logo-googleplus"></ion-icon> </a>    
-                    </li>
-                    <li>
-                        <a class="logo_instagram" href="#"><ion-icon name="logo-instagram"></ion-icon> </a>    
-                    </li>
-                    
-                </ul>
-                
-            
-            </div>
-        
-        </div>
-        <div class="row justify-content-center">
-            <p class="footer_text">Copyright &copy; 2019 by Ocean Blue Restaurant. All rights reserved</p>
-        </div>
-    </footer>
+    <?php include 'footer.php'?>
     
     
     
